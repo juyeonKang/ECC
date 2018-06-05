@@ -7,7 +7,7 @@ while 1
     r = add_dot(G,R(end,:),p,a);
  
     
-    if ismember(r,dot)
+    if ismember(r,dot,'row')
         R = [R; r];
     else
         fprintf("dot(" + r(1) + "," + r(2) + ") is not on curve")
