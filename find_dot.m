@@ -1,5 +1,6 @@
+function find_dot(p,a,b) 
 %%% 기본 인자 (필요에 따라 변경)
-p = 17; a = 2; b = 1;
+%%%p = 17; a = 2; b = 1;
 
 %%% x = [0, p-1] 에서 나오는 ( 우변 mod p )의 배열 Right 
 %%% y = [0, p-1] 에서 나오는 ( 좌변 mod p )의 배열 Left
@@ -28,3 +29,5 @@ end
 
 dot = dot(2:end, :);
 save('parameter.mat','a','p','dot');
+load('parameter.mat');
+end
