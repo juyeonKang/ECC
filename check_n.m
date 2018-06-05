@@ -1,4 +1,4 @@
-G = dot(4,:);
+G = dot(23,:);
 n=1;
 R = G;
 
@@ -16,8 +16,10 @@ while 1
     end
     
     if r == [0,0];
-        break
+        break;
     elseif (r(1)==G(1)) && (r(2)~=G(2));
+        break;
+    elseif r(2)==0 && R(end-1,2)==0
         break;
     end
 end
