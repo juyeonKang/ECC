@@ -10,7 +10,7 @@ while 1
     if ismember(r,dot,'row')
         R = [R; r];
     else
-        fprintf("dot(" + r(1) + "," + r(2) + ") is not on curve")
+        %fprintf("dot(" + r(1) + "," + r(2) + ") is not on curve")
         break;
     end
     

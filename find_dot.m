@@ -13,7 +13,7 @@ end
 %%% Right와 Left의 중복되는 값 찾기 (unique와 intersect 이용)
 R = unique(Right);
 L = unique(Left);
-inter = intersect(R,L)
+inter = intersect(R,L);
 
 %%% 중복되는 값의 인덱스 찾아서 좌표점 완성
 dot = [0 0];
@@ -28,6 +28,5 @@ for i=1:size(inter,2)
 end
 
 dot = dot(2:end, :);
-save('parameter.mat','a','p','dot');
-load('parameter.mat');
+save('parameter.mat','a','b','p','dot');
 end
