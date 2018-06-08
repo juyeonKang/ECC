@@ -9,7 +9,7 @@ load('parameter.mat');
 [G n] = generate_G(dot,p,a);
 
 %%%% 개인키 d
-d = 29;
+d = 59;
 %%%% 공개키 Q
 Q = multiple_dot(d,G,p,a);
 
